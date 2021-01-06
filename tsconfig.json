@@ -5,22 +5,25 @@
     "outDir": "dist",
     "target": "ES2020",
     "module": "CommonJS",
+    "sourceMap": true,
     "moduleResolution": "Node",
     "lib": [
       "dom",
       "es6",
       "ES2015",
       "ES2017",
-      "ES2018"
+      "ES2018",
+      "ES2020"
     ]
   },
   "include": [
-    "src",
-    "examples",
-    "docs"
+    "src/**/*",
+    "examples/**/*",
+    "docs/**/*",
+    "test/**/*"
   ],
   "exclude": [
-    "dist",
+    "dist/**/*",
     "node_modules"
   ]
 }

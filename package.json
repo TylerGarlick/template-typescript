@@ -1,5 +1,6 @@
 {
   "name": "typescript-template",
+  "private": true,
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
@@ -14,7 +15,11 @@
     "url": "git+https://github.com/TylerGarlick/typescript-template.git"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Tyler Garlick",
+    "email": "tjgarlick@gmail.com",
+    "url": "https://github.com/tylergarlick"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/TylerGarlick/typescript-template/issues"
@@ -24,9 +29,14 @@
     "@sindresorhus/tsconfig": "^0.8.0",
     "@types/jest": "^26.0.19",
     "@types/node": "^14.14.14",
+    "@types/prettier": "^2.1.6",
     "jest": "^26.6.3",
+    "np": "^7.2.0",
     "prettier": "^2.2.1",
+    "release-it": "^14.2.2",
     "ts-jest": "^26.4.4",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.1",
     "typescript": "^4.1.3"
   },
   "prettier": {
@@ -36,5 +46,8 @@
     "tabWidth": 2,
     "trailingComma": "all",
     "arrowParens": "always"
+  },
+  "dependencies": {
+    "type-fest": "^0.20.2"
   }
 }
