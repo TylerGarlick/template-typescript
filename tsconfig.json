@@ -1,5 +1,5 @@
 {
-  "extends": "@sindresorhus/tsconfig",
+  "extends": "@tsconfig/node14/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
     "outDir": "dist",
@@ -23,7 +23,7 @@
     "dist/**/*",
     "node_modules",
     "examples/**/*",
-    "docs/**/*"
-    //    "test/**/*"
+    "docs/**/*",
+    "test/**/*"
   ]
 }
