@@ -1,15 +1,15 @@
 {
-  "name": "typescript-template",
-  "private": true,
-  "version": "1.0.0",
+  "name": "template-typescript",
+  "version": "0.0.1",
   "description": "",
   "main": "dist/index.js",
-  "typings": "dist/index.d.js",
+  "typings": "dist/types.js",
   "scripts": {
     "postinstall": "npx typesync || :",
     "start": "npx ts-node ./src",
     "start:dev": "npx ts-node-dev ./src",
     "test": "npx jest",
+    "test:watch": "npx jest --watchAll",
     "prebuild": "rm -rf dist",
     "build": "npx tsc",
     "npm:publish": "npx np",
@@ -24,7 +24,6 @@
   ],
   "author": {
     "name": "Tyler Garlick",
-    "email": "tjgarlick@gmail.com",
     "url": "https://github.com/tylergarlick"
   },
   "license": "ISC",
@@ -34,18 +33,18 @@
   "homepage": "https://github.com/TylerGarlick/typescript-template#readme",
   "devDependencies": {
     "@tsconfig/node16": "^1.0.2",
-    "@types/jest": "^27.0.3",
-    "@types/node": "^16.11.9",
-    "@types/prettier": "^2.4.2",
-    "jest": "^27.3.1",
-    "np": "^7.6.0",
-    "prettier": "^2.4.1",
-    "release-it": "^14.11.8",
-    "npm-check-updates": "^12.0.2",
-    "ts-jest": "^27.0.7",
-    "ts-node": "^10.4.0",
+    "@types/jest": "^27.5.0",
+    "@types/node": "^17.0.31",
+    "@types/prettier": "^2.6.0",
+    "jest": "^28.0.3",
+    "np": "^7.6.1",
+    "npm-check-updates": "^12.5.11",
+    "prettier": "^2.6.2",
+    "release-it": "^15.0.0",
+    "ts-jest": "^28.0.1",
+    "ts-node": "^10.7.0",
     "ts-node-dev": "^1.1.8",
-    "typescript": "^4.5.2",
-    "typesync": "^0.8.0"
+    "typescript": "^4.6.4",
+    "typesync": "^0.9.1"
   }
 }
